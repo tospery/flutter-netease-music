@@ -17,7 +17,7 @@ dependencies:
   dio_cookie_manager: 2.0.0
   path_provider: ^2.0.2
   shared_preferences: ^2.0.15
-  url_launcher: ^6.1.8
+  url_launcher: ^6.1.6
   intl: ^0.17.0
   scoped_model: ^2.0.0
   loader:
@@ -25,11 +25,11 @@ dependencies:
       url: https://github.com/boyan01/loader.git
       ref: e1ef2d9957bc8615c7f19f989d4fcfc142e20e93
   encrypt: ^5.0.0
-  overlay_support: ^2.1.0
+  overlay_support: ^2.0.1
   music_player:
     git:
       url: https://github.com/boyan01/flutter-music-player.git
-      ref: 74eabb4b6bdef7ba4eca387a46a9352f672c3c85
+      ref: 5538df1a2e0cf4e18c790bf0e2337558533a5169
   scrollable_positioned_list: ^0.3.5
   hive: ^2.2.3
   hive_flutter: ^1.1.0
@@ -48,13 +48,13 @@ dependencies:
   stream_transform: ^2.0.1
   windows_taskbar: ^1.0.0
   filesize: ^2.0.1
-  desktop_drop: ^0.4.0
+  desktop_drop: ^0.3.0
   dotted_border: ^2.0.0+2
   meta: ^1.7.0
-  lychee_player: ^0.4.0
-  fluentui_system_icons: ^1.1.190
+  lychee_player: ^0.3.4
+  fluentui_system_icons: ^1.1.185
   pretty_qr_code: ^2.0.2
-  mixin_logger: ^0.0.3
+  mixin_logger: ^0.0.1
   synchronized: ^3.0.0+3
   ui_device:
     git:

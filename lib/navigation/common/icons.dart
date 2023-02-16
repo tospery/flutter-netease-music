@@ -49,7 +49,7 @@ class RecommendIcon extends StatelessWidget {
           child: Center(
             child: Text(
               context.strings.recommendTrackIconText,
-              style: context.textTheme.bodySmall?.copyWith(
+              style: context.textTheme.caption?.copyWith(
                 fontSize: 10,
                 height: 1,
               ),

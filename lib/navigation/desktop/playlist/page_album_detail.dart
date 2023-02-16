@@ -9,6 +9,7 @@ import '../../../providers/album_detail_provider.dart';
 import '../../../providers/navigator_provider.dart';
 import '../../../providers/player_provider.dart';
 import '../../../repository.dart';
+import '../../../utils/system/scroll_controller.dart';
 import '../../common/image.dart';
 import '../../common/material/flexible_app_bar.dart';
 import '../../common/navigation_target.dart';
@@ -60,6 +61,7 @@ class _AlbumDetailBody extends HookWidget {
         album: album,
         tracks: tracks,
         child: CustomScrollView(
+          controller: AppScrollController(),
           slivers: [
             SliverOverlapAbsorber(handle: absorberHandle),
             _AlbumSliverBar(album: album),

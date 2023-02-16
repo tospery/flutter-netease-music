@@ -9,6 +9,7 @@ import '../../../providers/navigator_provider.dart';
 import '../../../providers/player_provider.dart';
 import '../../../repository.dart';
 import '../../../utils/riverpod/cacheable_state_provider.dart';
+import '../../../utils/system/scroll_controller.dart';
 import '../../common/icons.dart';
 import '../../common/navigation_target.dart';
 import '../../common/player/animated_playing_indicator.dart';
@@ -125,7 +126,7 @@ class _PlayingList extends HookConsumerWidget {
       return offset - layoutHeight / 2;
     });
 
-    final controller = useScrollController(
+    final controller = useAppScrollController(
       initialScrollOffset: initialOffset,
     );
 

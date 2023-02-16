@@ -156,7 +156,7 @@ class AppTheme extends StatelessWidget {
 
     final colorScheme = AppColorScheme(
       brightness: theme.brightness,
-      background: theme.colorScheme.background,
+      background: theme.backgroundColor,
       backgroundSecondary: theme.scaffoldBackgroundColor,
       primary: theme.colorScheme.primary,
       textPrimary: theme.textTheme.bodyMedium!.color!,

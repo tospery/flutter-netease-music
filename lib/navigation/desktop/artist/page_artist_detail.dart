@@ -7,6 +7,7 @@ import '../../../extension.dart';
 import '../../../providers/artist_provider.dart';
 import '../../../providers/navigator_provider.dart';
 import '../../../repository.dart';
+import '../../../utils/system/scroll_controller.dart';
 import '../../common/buttons.dart';
 import '../../common/image.dart';
 import '../../common/navigation_target.dart';
@@ -33,7 +34,7 @@ class PageArtistDetail extends ConsumerWidget {
   }
 }
 
-class _ArtistDetailScaffold extends StatelessWidget {
+class _ArtistDetailScaffold extends HookWidget {
   const _ArtistDetailScaffold({
     super.key,
     required this.artist,
@@ -43,7 +44,9 @@ class _ArtistDetailScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = useAppScrollController();
     return ListView(
+      controller: controller,
       children: [
         _ArtistDetailHeader(artist: artist.artist),
         const SizedBox(height: 32),

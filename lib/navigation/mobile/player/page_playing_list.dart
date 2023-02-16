@@ -9,6 +9,7 @@ import '../../../extension.dart';
 import '../../../media/tracks/track_list.dart';
 import '../../../providers/player_provider.dart';
 import '../../../repository.dart';
+import '../../../utils/system/scroll_controller.dart';
 import '../../common/buttons.dart';
 import '../../common/icons.dart';
 import '../../common/material/dialogs.dart';
@@ -98,7 +99,7 @@ class _Title extends ConsumerWidget {
             ),
             TextSpan(
               text: ' (${playingList.tracks.length})',
-              style: context.textTheme.bodySmall,
+              style: context.textTheme.caption,
             ),
           ],
         ),
@@ -187,7 +188,8 @@ class _PlayingList extends HookConsumerWidget {
       return offset - layoutHeight / 2;
     });
 
-    final controller = useScrollController(initialScrollOffset: initialOffset);
+    final controller =
+        useAppScrollController(initialScrollOffset: initialOffset);
 
     return ListView.builder(
       controller: controller,
