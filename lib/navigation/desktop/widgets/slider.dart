@@ -40,31 +40,32 @@ class UnboundedRoundedRectSliderTrackShape extends RoundedRectSliderTrackShape
 
   final bool removeAdditionalActiveTrackHeight;
 
-  @override
-  void paint(
-    PaintingContext context,
-    Offset offset, {
-    required RenderBox parentBox,
-    required SliderThemeData sliderTheme,
-    required Animation<double> enableAnimation,
-    required TextDirection textDirection,
-    required Offset thumbCenter,
-    bool isDiscrete = false,
-    bool isEnabled = false,
-    double additionalActiveTrackHeight = 2,
-  }) {
-    super.paint(
-      context,
-      offset,
-      parentBox: parentBox,
-      sliderTheme: sliderTheme,
-      enableAnimation: enableAnimation,
-      textDirection: textDirection,
-      thumbCenter: thumbCenter,
-      isDiscrete: isDiscrete,
-      isEnabled: isEnabled,
-      additionalActiveTrackHeight:
-          removeAdditionalActiveTrackHeight ? 0 : additionalActiveTrackHeight,
-    );
-  }
+  // TODO 解决编译错误
+  // @override
+  // void paint(
+  //   PaintingContext context,
+  //   Offset offset, {
+  //   required RenderBox parentBox,
+  //   required SliderThemeData sliderTheme,
+  //   required Animation<double> enableAnimation,
+  //   required TextDirection textDirection,
+  //   required Offset thumbCenter,
+  //   bool isDiscrete = false,
+  //   bool isEnabled = false,
+  //   double additionalActiveTrackHeight = 2,
+  // }) {
+  //   super.paint(
+  //     context,
+  //     offset,
+  //     parentBox: parentBox,
+  //     sliderTheme: sliderTheme,
+  //     enableAnimation: enableAnimation,
+  //     textDirection: textDirection,
+  //     thumbCenter: thumbCenter,
+  //     isDiscrete: isDiscrete,
+  //     isEnabled: isEnabled,
+  //     additionalActiveTrackHeight:
+  //         removeAdditionalActiveTrackHeight ? 0 : additionalActiveTrackHeight,
+  //   );
+  // }
 }

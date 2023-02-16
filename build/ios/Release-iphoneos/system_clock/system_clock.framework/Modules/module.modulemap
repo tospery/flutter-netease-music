@@ -1,0 +1,6 @@
+framework module system_clock {
+  umbrella header "system_clock-umbrella.h"
+
+  export *
+  module * { export * }
+}
